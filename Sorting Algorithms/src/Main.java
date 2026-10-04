@@ -60,7 +60,7 @@ class Main{
 }
 */
 
-// Insertion Sort
+// Insertion Sort TC - o(n^2)
 class Main{
     static void sort(int[] arr){
         int n = arr.length;
