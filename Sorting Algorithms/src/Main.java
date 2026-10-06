@@ -61,31 +61,31 @@ class Main{
 */
 
 // Insertion Sort TC - o(n^2)
+/*
 class Main{
-    static void sort(int[] arr){
+    public static void f(int[] arr){
         int n = arr.length;
-
         for(int i = 1; i < n; i++){
-            int key = arr[i];
-            int j = i - 1;
+            int curr = arr[i];
+            int prev = i - 1;
 
-            while(j >= 0 && arr[j] > key){
-                arr[j + 1] = arr[j];
-                j = j - 1;
+            while(prev >= 0 && arr[prev] > curr){
+                arr[prev+1] = arr[prev];
+                prev--;
             }
-            arr[j + 1] = key;
+
+            arr[prev + 1] = curr;
         }
     }
-
-    static void printArray(int[] arr){
-        int n = arr.length;
-        for(int i = 0; i < n; i++){
-            System.out.print(arr[i] + " ");
+    public static void print(int[] arr){
+        for(int val : arr){
+            System.out.print(val + " ");
         }
-        System.out.println();
     }
     public static void main(String args[]){
-        int[] arr = {12, 11, 13, 5, 6};
-
+        int[] arr = {5, 4, 1, 3, 2};
+        f(arr);
+        print(arr);
     }
 }
+*/
