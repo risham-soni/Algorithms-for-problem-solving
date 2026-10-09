@@ -61,3 +61,22 @@ class Main{
     }
 }
 */
+
+/*
+class Main{
+    public static void main(String args[]){
+        int[] arr = {2, 4, 1, 7, 3};
+        int n = arr.length;
+        int[] prefix = new int[n];
+        for(int i = 1; i < n; i++){
+            prefix[0] = arr[0];
+            prefix[i] = arr[i] + prefix[i-1];
+        }
+        int left = 1;
+        int right = 3;
+        int rangeSum = prefix[right] - prefix[left-1];
+        System.out.println(Arrays.toString(prefix));
+        System.out.println(rangeSum);
+    }
+}
+*/
