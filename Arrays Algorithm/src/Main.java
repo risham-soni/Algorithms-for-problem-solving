@@ -42,3 +42,22 @@ class Main{
 }
 */
 
+//Prefix Sum
+/*
+class Main{
+    public static void main(String args[]){
+        int[] arr = {2, 4, 1, 7, 3};
+        int n = arr.length;
+        int[] prefix = new int[n+1];
+
+        for(int i = 0; i < n; i++){
+            prefix[i+1] = prefix[i] + arr[i];
+        }
+        int left = 1;
+        int right = 3;
+        int rangesum = prefix[right+1] - prefix[left];
+        System.out.println(Arrays.toString(prefix));
+        System.out.println(rangesum);
+    }
+}
+*/
