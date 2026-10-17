@@ -84,8 +84,29 @@ class Main{
 
 //Difference Array Algorithm
 public class Main{
+    public static int[] f(int[] arr, int[][] updates){
+        int n = arr.length;
+        int[] diffArray = new int[n];
+
+        for(int[] update : updates){
+            int left = update[0];
+            int right = update[1];
+            int inc = update[2];
+
+            diffArray[left] += inc;
+            if(right + 1 < n){
+                diffArray[right+1] -= inc;
+            }
+        }
+        for(int i = 1; i < n; i++){
+            diffArray[i] += diffArray[i-1];
+        }
+        return diffArray;
+    }
     public static void main(String args[]){
-        int[] arr = {2,3,5,7,9};
+        int[] arr = {0, 0, 0, 0, 0};
+        int[][] updates = {{1, 3, 2}, {2, 4, 3}};
+        System.out.println(Arrays.toString(f(arr, updates)));
     }
 }
 
