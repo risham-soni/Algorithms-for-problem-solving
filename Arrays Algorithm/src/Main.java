@@ -83,6 +83,7 @@ class Main{
 
 
 //Difference Array Algorithm
+/*
 public class Main{
     public static int[] f(int[] arr, int[][] updates){
         int n = arr.length;
@@ -109,4 +110,8 @@ public class Main{
         System.out.println(Arrays.toString(f(arr, updates)));
     }
 }
+*/
+
+// Moore's Voting Algorithm
+
 
